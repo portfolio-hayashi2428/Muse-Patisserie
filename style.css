@@ -298,7 +298,7 @@ PICK UP
 /*========= スライダー部分===============*/
 .slider {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 950px;
 }
 
 .slider img {
@@ -425,6 +425,11 @@ CONCEPT
 
 .concept-text-wrap-1 {
   margin-top: -5%;
+  width: 310px;
+}
+
+.concept-text-wrap-2 {
+  width: 310px;
 }
 
 .concept-active {
@@ -956,6 +961,7 @@ footer p {
 
   .concept-text-wrap-1 {
     margin-top: 0%;
+    width: 85%;
   }
 
   .illust-1 {
@@ -972,6 +978,7 @@ footer p {
 
   .concept-text-wrap-2 {
     order: 2;
+    width: 85%;
   }
 
   .concept-wrap-2 {
@@ -1114,7 +1121,8 @@ footer p {
   }
 
   .onlineshop-maru-link-wrap {
-    bottom: 6%;
+    bottom: 7%;
+    right: 7%;
   }
 
   /*-------------------------------------------
