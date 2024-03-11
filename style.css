@@ -502,7 +502,7 @@ PRODUCT
 }
 
 .product-wrap {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   opacity: 0;
   transform: translateY(60px);
@@ -591,7 +591,7 @@ ONLINE SHOP
   display: flex;
   justify-content: center;
   margin-top: 13%;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   opacity: 0;
   transform: translateY(60px);
@@ -658,7 +658,7 @@ ONLINE SHOP
   opacity: 0;
   transform: translateY(60px);
   transition: opacity 1.5s, transform 1.5s;
-  max-width: 920px;
+  max-width: 910px;
   margin: 0 auto;
 }
 
@@ -721,7 +721,7 @@ SNS
 }
 
 .sns-wrap {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   opacity: 0;
   transform: translateY(60px);
@@ -870,14 +870,14 @@ iframe {
 -------------------------------------------*/
 footer {
   background-color: #3f1700;
-  padding: 8% 0% 5% 0;
+  padding: 10% 0% 5% 0;
 }
 
 .footer-logo-img {
-  width: 30%;
+  width: 270px;
   display: block;
   margin: 0 auto;
-  margin-bottom: 7%;
+  margin-bottom: 5%;
 }
 
 .footer-list {
@@ -887,9 +887,10 @@ footer {
   gap: 20% 3%;
   line-height: 1.7;
   color: #fff;
-  font-size: 14px;
-  letter-spacing: 0.3em;
+  font-size: 13px;
+  letter-spacing: 0.2em;
   padding: 0% 5%;
+  margin-bottom: 5%;
 }
 
 footer p {
@@ -898,6 +899,7 @@ footer p {
   font-size: 12px;
   margin-top: 6%;
   letter-spacing: 0.2em;
+  margin-bottom: 3%;
 }
 
 /*-------------------------------------------
@@ -1316,11 +1318,6 @@ footer p {
     padding: 0% 10%;
     display: block;
   }
-
-  .footer-logo-img {
-    width: 70%;
-    margin-bottom: 5%;
-  }
 }
 
 /*-------------------------------------------
@@ -1361,5 +1358,18 @@ footer p {
 
   .news-item {
     margin-bottom: 5%;
+  }
+
+  /*-------------------------------------------
+450px_フッター
+-------------------------------------------*/
+
+  .footer-logo-img {
+    width: 200px;
+  }
+
+  .footer-list {
+    gap: 20% 5%;
+    font-size: 12px;
   }
 }
