@@ -1,3 +1,4 @@
+/*========= フォント読み込み時のチラつきを防ぐ===============*/
 setTimeout(function () {
   if (
     document.getElementsByTagName("html")[0].classList.contains("wf-active") !=
@@ -5,8 +6,9 @@ setTimeout(function () {
   ) {
     document.getElementsByTagName("html")[0].classList.add("loading-delay");
   }
-}, 3000);
+}, 1500);
 
+/*========= スライダー部分===============*/
 $(".slider").slick({
   autoplay: true, //自動的に動き出すか。初期値はfalse。
   autoplaySpeed: 4000, // 自動再生の速度
@@ -35,6 +37,7 @@ $(".slider").slick({
   ],
 });
 
+/*========= ふわっと表示部分===============*/
 $(".openbtn").click(function () {
   //ボタンがクリックされたら
   $(this).toggleClass("active"); //ボタン自身に activeクラスを付与し
@@ -57,19 +60,19 @@ $(
   }
 });
 
-//SVGアニメーションの描画
+/*========= 手書きアニメーション部分===============*/
 var stroke;
 stroke = new Vivus("mask", {
   //アニメーションをするIDの指定
   start: "manual", //自動再生をせずスタートをマニュアルに
   type: "scenario-sync", // アニメーションのタイプを設定
-  duration: 30, //アニメーションの時間設定。数字が小さくなるほど速い
+  duration: 60, //アニメーションの時間設定。数字が小さくなるほど速い
   forceRender: false, //パスが更新された場合に再レンダリングさせない
   animTimingFunction: Vivus.EASE, //動きの加速減速設定
 });
 
 $(window).on("load", function () {
-  $("#splash").delay(2300).fadeOut("slow"); //ローディング画面を1.5秒（1500ms）待機してからフェイドアウト
-  $("#splash_logo").delay(2000).fadeOut("slow"); //ロゴを1.5秒（1500ms）待機してからフェイドアウト
+  $("#splash").delay(4000).fadeOut("slow"); //ローディング画面を1.5秒（1500ms）待機してからフェイドアウト
+  $("#splash_logo").delay(4000).fadeOut("slow"); //ロゴを1.5秒（1500ms）待機してからフェイドアウト
   stroke.play(); //SVGアニメーションの実行
 });
