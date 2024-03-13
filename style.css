@@ -1,21 +1,5 @@
 html {
   scroll-behavior: smooth;
-  visibility: hidden;
-}
-
-html.wf-active,
-html.loading-delay {
-  visibility: visible;
-}
-
-html {
-  scroll-behavior: smooth;
-  visibility: hidden;
-}
-
-html.wf-active,
-html.loading-delay {
-  visibility: visible;
 }
 
 body {
