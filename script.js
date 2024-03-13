@@ -62,7 +62,7 @@ stroke = new Vivus("mask", {
 });
 
 $(window).on("load", function () {
-  $("#splash").delay(3000).fadeOut("slow"); //ローディング画面を1.5秒（1500ms）待機してからフェイドアウト
+  $("#splash").delay(2000).fadeOut("slow"); //ローディング画面を1.5秒（1500ms）待機してからフェイドアウト
   $("#splash_logo").delay(3000).fadeOut("slow"); //ロゴを1.5秒（1500ms）待機してからフェイドアウト
   stroke.play(); //SVGアニメーションの実行
 });
