@@ -6,7 +6,7 @@ setTimeout(function () {
   ) {
     document.getElementsByTagName("html")[0].classList.add("loading-delay");
   }
-}, 1500);
+}, 2000);
 
 /*========= スライダー部分===============*/
 $(".slider").slick({
