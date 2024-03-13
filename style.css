@@ -192,8 +192,8 @@ body {
 .openbtn {
   position: fixed;
   z-index: 9999; /*ボタンを最前面に*/
-  top: 20px;
-  right: 20px;
+  top: 15px;
+  right: 15px;
   cursor: pointer;
   width: 50px;
   height: 50px;
@@ -248,7 +248,7 @@ PICK UP
 -------------------------------------------*/
 
 .pickup {
-  margin-bottom: 3%;
+  margin-bottom: 4%;
 }
 
 .pickup h2 {
@@ -938,7 +938,7 @@ footer p {
   }
 
   .concept-text-1 {
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 7%;
   }
@@ -949,7 +949,7 @@ footer p {
   }
 
   .illust-1 {
-    width: 55%;
+    width: 70%;
     display: block;
     margin: 0 auto;
     margin-top: 4%;
@@ -981,7 +981,7 @@ footer p {
   }
 
   .concept-text-2 {
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 7%;
   }
@@ -991,7 +991,7 @@ footer p {
   }
 
   .illust-2 {
-    width: 55%;
+    width: 70%;
     display: block;
     margin: 0 auto;
     margin-top: 4%;
@@ -1209,7 +1209,7 @@ footer p {
   }
 
   .concept-text-1 {
-    margin-top: 8%;
+    margin-top: 10%;
   }
 
   .illust-1 {
@@ -1228,7 +1228,7 @@ footer p {
   }
 
   .concept-text-2 {
-    margin-top: 8%;
+    margin-top: 10%;
   }
 
   .illust-2 {
@@ -1338,7 +1338,8 @@ footer p {
 -------------------------------------------*/
 
   body {
-    font-size: 14px;
+    font-size: 15px;
+    letter-spacing: 0.1em;
   }
 
   /*-------------------------------------------
