@@ -1,68 +1,72 @@
-/*========= スライダー部分===============*/
+/*-------------------------------------------
+スライダー
+-------------------------------------------*/
 $(".slider").slick({
-  autoplay: true, //自動的に動き出すか。初期値はfalse。
-  autoplaySpeed: 4000, // 自動再生の速度
-  speed: 1200, // スライドの切り替わり速度
-  infinite: true, //スライドをループさせるかどうか。初期値はtrue。
-  slidesToShow: 3, //スライドを画面に3枚見せる
-  slidesToScroll: 3, //1回のスクロールで3枚の写真を移動して見せる
-  prevArrow: '<div class="slick-prev"></div>', //矢印部分PreviewのHTMLを変更
-  nextArrow: '<div class="slick-next"></div>', //矢印部分NextのHTMLを変更
-  dots: true, //下部ドットナビゲーションの表示
+  autoplay: true,
+  autoplaySpeed: 4000,
+  speed: 1200,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  prevArrow: '<div class="slick-prev"></div>',
+  nextArrow: '<div class="slick-next"></div>',
+  dots: true,
   responsive: [
     {
-      breakpoint: 900, //モニターの横幅が769px以下の見せ方
+      breakpoint: 900,
       settings: {
-        slidesToShow: 2, //スライドを画面に2枚見せる
-        slidesToScroll: 2, //1回のスクロールで2枚の写真を移動して見せる
+        slidesToShow: 2,
+        slidesToScroll: 2,
       },
     },
     {
-      breakpoint: 500, //モニターの横幅が426px以下の見せ方
+      breakpoint: 500,
       settings: {
-        slidesToShow: 1, //スライドを画面に1枚見せる
-        slidesToScroll: 1, //1回のスクロールで1枚の写真を移動して見せる
+        slidesToShow: 1,
+        slidesToScroll: 1,
       },
     },
   ],
 });
 
-/*========= ふわっと表示部分===============*/
+/*-------------------------------------------
+ハンバーガーメニュー
+-------------------------------------------*/
 $(".openbtn").click(function () {
-  //ボタンがクリックされたら
-  $(this).toggleClass("active"); //ボタン自身に activeクラスを付与し
-  $("#g-nav").toggleClass("panelactive"); //ナビゲーションにpanelactiveクラスを付与
+  $(this).toggleClass("active");
+  $("#g-nav").toggleClass("panelactive");
 });
 
 $("#g-nav a").click(function () {
-  //ナビゲーションのリンクがクリックされたら
-  $(".openbtn").removeClass("active"); //ボタンの activeクラスを除去し
-  $("#g-nav").removeClass("panelactive"); //ナビゲーションのpanelactiveクラスも除去
+  $(".openbtn").removeClass("active");
+  $("#g-nav").removeClass("panelactive");
 });
 
-//スクロールをしたら1度だけアニメーションをする設定
+/*-------------------------------------------
+ふわっと表示 
+-------------------------------------------*/
 $(
   ".concept-h2 , .concept-wrap-1, .concept-wrap-2 ,.product-wrap ,.onlineshop ,.news-wrap ,.sns-wrap ,.access-wrap"
 ).on("inview", function (event, isInView) {
   if (isInView) {
-    //表示領域に入った時
-    $(this).addClass("active"); //クラス名が付与
+    $(this).addClass("active");
   }
 });
 
-/*========= 手書きアニメーション部分===============*/
+/*-------------------------------------------
+手書きアニメーション
+-------------------------------------------*/
 var stroke;
 stroke = new Vivus("mask", {
-  //アニメーションをするIDの指定
-  start: "manual", //自動再生をせずスタートをマニュアルに
-  type: "scenario-sync", // アニメーションのタイプを設定
-  duration: 40, //アニメーションの時間設定。数字が小さくなるほど速い
-  forceRender: false, //パスが更新された場合に再レンダリングさせない
-  animTimingFunction: Vivus.EASE, //動きの加速減速設定
+  start: "manual",
+  type: "scenario-sync",
+  duration: 40,
+  forceRender: false,
+  animTimingFunction: Vivus.EASE,
 });
 
 $(window).on("load", function () {
-  $("#splash").delay(3000).fadeOut("slow"); //ローディング画面を1.5秒（1500ms）待機してからフェイドアウト
-  $("#splash_logo").delay(3000).fadeOut("slow"); //ロゴを1.5秒（1500ms）待機してからフェイドアウト
-  stroke.play(); //SVGアニメーションの実行
+  $("#splash").delay(3000).fadeOut("slow");
+  $("#splash_logo").delay(3000).fadeOut("slow");
+  stroke.play();
 });
