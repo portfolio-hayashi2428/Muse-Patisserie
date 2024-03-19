@@ -351,8 +351,8 @@ CONCEPT
 
 .concept-h2 {
   opacity: 0;
-  transform: translateY(100px);
-  transition: opacity 3s, transform 3s;
+  transform: translateY(30px);
+  transition: opacity 2s, transform 2s;
 }
 
 .concept h2 p {
@@ -373,11 +373,11 @@ CONCEPT
   display: flex;
   justify-content: center;
   gap: 5%;
+  margin-bottom: 5%;
   transform: translateX(30px);
   opacity: 0;
   transform: translateY(60px);
   transition: opacity 2s, transform 2s;
-  margin-bottom: 5%;
 }
 
 .concept-wrap-2 {
@@ -472,17 +472,20 @@ PRODUCT
   padding: 8% 0% 10% 0%;
 }
 
+.product-h2 {
+  width: 20%;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 2s, transform 2s;
+}
+
 .product-wrap {
   max-width: 900px;
   margin: 0 auto;
   opacity: 0;
   transform: translateY(60px);
   transition: opacity 1.5s, transform 1.5s;
-}
-
-.product h2 {
-  width: 20%;
-  margin: 0 auto;
 }
 
 .product h2 p {
