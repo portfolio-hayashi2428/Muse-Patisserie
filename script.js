@@ -46,7 +46,7 @@ $("#g-nav a").click(function () {
 ふわっと表示 
 -------------------------------------------*/
 $(
-  ".concept-h2 , .concept-wrap-1, .concept-wrap-2 ,.product-wrap ,.onlineshop ,.news-wrap ,.sns-wrap ,.access-wrap"
+  ".concept-h2 , .concept-wrap-1, .concept-wrap-2 ,.product-h2 ,.product-wrap ,.onlineshop ,.news-wrap ,.sns-wrap ,.access-wrap"
 ).on("inview", function (event, isInView) {
   if (isInView) {
     $(this).addClass("active");
