@@ -580,8 +580,8 @@ ONLINE SHOP
 }
 
 .onlineshop-text-wrap h2 {
-  width: 93%;
-  text-align: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .onlineshop-text-wrap h2 p {
@@ -997,12 +997,12 @@ footer p {
 900px_ONLINE SHOP
 -------------------------------------------*/
 
-  .onlineshop h2 {
-    width: 60%;
-  }
-
   .onlineshop {
     width: 85%;
+  }
+
+  .onlineshop-text-wrap h2 {
+    width: 100%;
   }
 
   /*-------------------------------------------
@@ -1124,12 +1124,12 @@ footer p {
     margin-bottom: 7%;
   }
 
-  .onlineshop h2 img {
-    width: 80%;
-  }
-
   .onlineshop-text-wrap {
     margin-left: 0%;
+  }
+
+  .onlineshop-text-wrap h2 {
+    width: 45%;
   }
 
   /*-------------------------------------------
@@ -1229,8 +1229,9 @@ footer p {
   /*-------------------------------------------
 600px_ONLINE SHOP
 -------------------------------------------*/
-  .onlineshop h2 {
-    width: 80%;
+
+  .onlineshop-text-wrap h2 {
+    width: 60%;
   }
 
   /*-------------------------------------------
