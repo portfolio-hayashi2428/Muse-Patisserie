@@ -640,6 +640,23 @@ Movie
   max-width: 800px;
 }
 
+.movie-h2 img {
+  width: 100%;
+}
+
+.movie h2 {
+  color: #581f00;
+  width: 240px;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 0.15em;
+  margin-bottom: 4%;
+}
+
+.movie-h2 p {
+  margin-top: 7%;
+}
+
 /*-------------------------------------------
  NEWS
 -------------------------------------------*/
@@ -1169,6 +1186,10 @@ footer p {
     width: 90%;
   }
 
+  .movie h2 {
+    width: 28%;
+  }
+
   /*-------------------------------------------
 800px_SNS
 -------------------------------------------*/
@@ -1361,6 +1382,10 @@ footer p {
   body {
     font-size: 15px;
     letter-spacing: 0.1em;
+  }
+
+  .movie h2 {
+    width: 30%;
   }
 
   /*-------------------------------------------
